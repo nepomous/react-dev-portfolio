@@ -1,9 +1,6 @@
-// Importando o React
 import React from "react";
-// Importando os components necessários da lib react-materialize
 import { Row, Col, Card } from 'react-materialize';
 
-// Recebe os parâmetros passadados para o Componenet na variável props
 const Experience = (props) => (
   <Card>
       <Row>
@@ -13,7 +10,7 @@ const Experience = (props) => (
         </Col>
 
         <Col s={10} s={10}>
-          <p><b>{props.title} in <span className="grey darken-2 white-text">{props.company}</span></b></p>
+          <p><b>{props.title} - <span className="grey darken-2 white-text">{props.company}</span></b></p>
           <p>{props.description}</p>
         </Col>
       </Row>

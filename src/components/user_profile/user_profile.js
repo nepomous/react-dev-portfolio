@@ -1,9 +1,7 @@
-// Importando o React
 import React from "react";
-// Importando os components necessários da lib react-materialize
 import { Row, Col, Card } from 'react-materialize';
-// importando a foto do usuário (note que depois podemos usa-la facilmente chamando apenas avatar ao invés do caminho completo)
 import avatar from '../../images/avatar.png';
+import { profileStrings } from "../../constants/strings";
 
 const UserProfile = () => (
   <Card>
@@ -13,8 +11,8 @@ const UserProfile = () => (
         </Col>
       </Row>
       <Row className="center-align">
-        <h5 >Lorem Ipsum</h5>
-        <p className="grey darken-2 white-text">Ruby Developer</p>
+        <h5 >{profileStrings.fullName}</h5>
+        <p className="grey darken-2 white-text">{profileStrings.jobTitle}</p>
       </Row>
   </Card>
 );
